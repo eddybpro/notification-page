@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  --color-brand-1: hsl(224, 21%, 14%);
+  --color-brand-2: hsl(219, 12%, 42%);
+  --color-brand-3: hsl(219, 14%, 63%);
+  --color-brand-4: hsl(219, 85%, 26%);
+
+  --color-site-1: hsl(210, 60%, 98%);
+  --color-site-2: hsl(0, 0%, 100%);
+  --color-site-3: hsl(205, 33%, 90%);
+  --color-site-4: hsl(211, 68%, 94%);
+  --color-site-5: hsl(1, 90%, 64%);
+
+  --font-plus-jakarta: "Plus Jakarta Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-plus-jakarta);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  width: 100%;
+  max-width: 100rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--color-site-2);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.NotifBox {
+  display: flex;
+  align-items: first baseline;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.NotifBox-Title {
+  font-size: 2.5rem;
+  color: var(--color-brand-1);
+  text-transform: capitalize;
+}
+
+.NotifBox-Container {
+  width: 3rem;
+  height: 2.5rem;
+  border-radius: 0.55rem;
+  background-color: var(--color-brand-4);
+  display: grid;
+  place-items: center;
+}
+
+.NotifBox-Container-Num {
+  color: var(--color-site-1);
+  font-size: 1.6rem;
+}
+
+.MarkAsReadLink {
+  text-decoration: none;
+  color: var(--color-brand-2);
+  font-size: 1.6rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.MarkAsReadLink:hover {
+  color: var(--color-brand-4);
+}

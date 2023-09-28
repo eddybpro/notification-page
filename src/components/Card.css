@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  --color-brand-1: hsl(224, 21%, 14%);
+  --color-brand-2: hsl(219, 12%, 42%);
+  --color-brand-3: hsl(219, 14%, 63%);
+  --color-brand-4: hsl(219, 85%, 26%);
+
+  --color-site-1: hsl(210, 60%, 98%);
+  --color-site-2: hsl(0, 0%, 100%);
+  --color-site-3: hsl(205, 33%, 90%);
+  --color-site-4: hsl(211, 68%, 94%);
+  --color-site-5: hsl(1, 90%, 64%);
+
+  --font-plus-jakarta: "Plus Jakarta Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-plus-jakarta);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.Card {
+  display: grid;
+  grid-template-columns: 5rem calc(100% - 6.5rem);
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Card.new {
+  background-color: var(--color-site-4);
+}
+
+.Card-UserImg {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.Card-TxtBox-Container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Card-TxtBox-Container-Info {
+  margin-bottom: 0.5rem;
+}
+
+.Card-TxtBox-Container-UserName {
+  font-size: 1.6rem;
+  margin-right: 0.25rem;
+  color: var(--color-brand-1);
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.Card-TxtBox-Container-UserName:hover {
+  color: var(--color-brand-4);
+}
+
+.Card-TxtBox-Container-Action {
+  font-size: 1.5rem;
+  margin: 0 0.25rem;
+  color: var(--color-brand-3);
+}
+
+.Card-TxtBox-Container-Post {
+  font-size: 1.6rem;
+  margin-left: 0.25rem;
+  color: var(--color-brand-2);
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.Card-TxtBox-Container-Post:hover {
+  color: var(--color-brand-4);
+}
+
+.Card-TxtBox-Container-Group {
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--color-brand-4);
+}
+
+.Card-TxtBox-Container-RedCircle {
+  display: inline-block;
+  margin-left: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-site-5);
+  border-radius: 50%;
+}
+
+.Card-TxtBox-Container-Photo {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.Card-Time {
+  font-size: 1.6rem;
+  color: var(--color-brand-3);
+}
+
+.Card-Msg-Container {
+  border: 1px solid var(--color-site-3);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.Card-Msg-Container:hover {
+  background-color: var(--color-site-3);
+}
+
+.Card-Msg-Container-Para {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--color-brand-2);
+}
